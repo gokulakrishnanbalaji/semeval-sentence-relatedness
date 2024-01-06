@@ -1,7 +1,7 @@
 from sentence_transformers import  util
 import numpy as np
 
-def predict_and_save(model, dev_df):
+def predict_and_save(model, dev_df,name):
     all_scores = []  # Empty list to store all predicted scores
 
     for i, row in dev_df.iterrows():
@@ -20,4 +20,4 @@ def predict_and_save(model, dev_df):
 
         dev_df = dev_df[['PairID','Pred_Score']]
 
-        dev_df.to_csv('/predictions/pred_tel_a.csv', index=False)
+        dev_df.to_csv(f'/predictions/pred_{name}_a.csv', index=False)
