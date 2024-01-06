@@ -32,7 +32,7 @@ def training(model, train_df, val_df):
     train_loss = losses.CosineSimilarityLoss(model=model)
 
     num_epochs = 7
-    on_epoch_end(0)
+    on_epoch_end(0,val_df,model)
     for epoch in range(1,num_epochs+1):
         model.fit(
             train_objectives=[(train_dataloader, train_loss)],

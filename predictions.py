@@ -16,8 +16,8 @@ def predict_and_save(model, dev_df,name):
         score = util.cos_sim(embedding1, embedding2)[0][0]  # Access specific element
         all_scores.append(np.round(float(score.item()), 2))
 
-        dev_df["Pred_Score"] = np.round(all_scores, 2)
+    dev_df["Pred_Score"] = np.round(all_scores, 2)
 
-        dev_df = dev_df[['PairID','Pred_Score']]
+    dev_df = dev_df[['PairID','Pred_Score']]
 
-        dev_df.to_csv(f'/predictions/pred_{name}_a.csv', index=False)
+    dev_df.to_csv(f'/predictions/pred_{name}_a.csv', index=False)
