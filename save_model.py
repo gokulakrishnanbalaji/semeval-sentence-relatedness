@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+import os
 
 def save(model,name):
     model.save(f"/models/finetuned_{name}_model")
