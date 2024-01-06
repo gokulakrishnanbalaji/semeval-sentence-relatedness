@@ -1,6 +1,6 @@
 from model import model
 from pipeline import download_data
-from predictions import predict_and_save
+from predict import predict_and_save
 from training import training
 from save_model import save, load
 
