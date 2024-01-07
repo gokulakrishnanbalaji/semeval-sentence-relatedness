@@ -9,6 +9,6 @@ dev_url = 'https://raw.githubusercontent.com/semantic-textual-relatedness/Semant
 name='tel'
 
 train_df,val_df, dev_df = download_data(train_url,dev_url)
-model = training(model,train_df, val_df)
+model = training(model,train_df, val_df,name)
 save(model,name)
 predict_and_save(model, dev_df,name)

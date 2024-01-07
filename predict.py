@@ -1,5 +1,7 @@
 from sentence_transformers import  util
 import numpy as np
+import os
+import zipfile
 
 def predict_and_save(model, dev_df,name):
     all_scores = []  # Empty list to store all predicted scores
@@ -21,3 +23,8 @@ def predict_and_save(model, dev_df,name):
     dev_df = dev_df[['PairID','Pred_Score']]
 
     dev_df.to_csv(f'predictions/pred_{name}_a.csv', index=False)
+
+    if os.path.exists(f'predictions/pred_{name}_a.csv'):
+        with zipfile.ZipFile(f'zipped_predictions/pred_{name}_a.zip', 'w', zipfile.ZIP_DEFLATED) as zip:
+            zip.write(f'predictions/pred_{name}_a.csv')
+        
