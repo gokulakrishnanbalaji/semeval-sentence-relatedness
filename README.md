@@ -11,6 +11,17 @@ This application measures the semantic textual similarity between two sentences.
 pip install -r requirements.txt
 ```
 
+2. Make sure to create folder/directories called models, predictions and zipped_predictions for the output to get savedin the local disk.
+```
+mkdir models
+```
+```
+mkdir predictions
+```
+```
+mkdir zipped_predictions
+```
+
 ## Usage
 
 1. Run the application using the command:
