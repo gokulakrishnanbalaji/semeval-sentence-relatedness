@@ -27,10 +27,8 @@ mkdir zipped_predictions
 1. Run the application using the command:
 
 ```
-python3 {lang}.py
+python3 app.py
 ```
-
-Replace `{lang}` with any one of the languages specified in the problem statement (e.g., `tel.py`, `tam.py`, `mal.py`, `kan.py`, `hin.py`, `ben.py`, `eng.py`).
 
 2. To use the graphical user interface (GUI) for testing the model, run:
 

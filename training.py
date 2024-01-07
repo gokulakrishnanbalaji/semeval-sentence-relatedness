@@ -8,7 +8,7 @@ import os
 def compute_spearman_correlation(predictions, targets):
     return spearmanr(predictions, targets).correlation
 
-def on_epoch_end(epoch, val_df, model):
+def on_epoch_end(epoch, val_df, model,name):
     val_scores = []  # Empty list to store all predicted scores
 
     for i, row in val_df.iterrows():
@@ -24,7 +24,7 @@ def on_epoch_end(epoch, val_df, model):
         val_scores.append(np.round(float(score.item()), 2))
 
     spear_score=spearmanr(val_scores, val_df['Score']).correlation
-    print(f"Spearman Coefficient on {epoch}th epoch: {spear_score}")
+    print(f"{name}: Spearman Coefficient on {epoch}th epoch: {spear_score}")
     return spear_score
 
 def training(model, train_df, val_df, name):
@@ -38,14 +38,14 @@ def training(model, train_df, val_df, name):
     num_epochs = 7
     spearman_values=[]
 
-    spearman_values.append(on_epoch_end(0,val_df,model))
+    spearman_values.append(on_epoch_end(0,val_df,model,name))
     for epoch in range(1,num_epochs+1):
         model.fit(
             train_objectives=[(train_dataloader, train_loss)],
             epochs=1,
             warmup_steps=100,
         )
-        spearman_values.append(on_epoch_end(epoch, val_df, model))
+        spearman_values.append(on_epoch_end(epoch, val_df, model,name))
 
     if os.path.exists("eval.csv"):
         eval_df=pd.read_csv("eval.csv")

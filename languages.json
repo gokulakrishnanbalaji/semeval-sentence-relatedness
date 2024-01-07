@@ -1,0 +1,48 @@
+{
+    "Amharic ": {
+      "name": "amh",
+      "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/amh/amh_train.csv",
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/amh/amh_dev.csv"
+    },
+    "Algerian Arabic": {
+      "name": "arq",
+      "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/arq/arq_train.csv",
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/arq/arq_dev.csv"
+    },
+    "Moroccan Arabic": {
+      "name": "ary",
+      "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/ary/ary_train.csv",
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/ary/ary_dev.csv"
+    },
+    "English": {
+      "name": "eng",
+      "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/eng/eng_train.csv",
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/eng/eng_dev.csv"
+    },
+    "Spanish":{
+        "name": "esp",
+        "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/esp/esp_train.csv",
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/esp/esp_dev.csv"
+    },
+    "Hausa ":{
+        "name": "hau",
+        "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/hau/hau_train.csv",
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/hau/hau_dev.csv"
+    },
+    "Kinyarwanda":{
+        "name": "kin",
+        "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/kin/kin_train.csv",
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/kin/kin_dev.csv"
+    },
+    "Marathi":{
+        "name": "mar",
+        "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/mar/mar_train.csv",
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/mar/mar_dev.csv"
+    },
+    "Telugu":{
+        "name": "tel",
+        "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/tel/tel_train.csv",
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/tel/tel_dev.csv"
+    }
+    
+}
