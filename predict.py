@@ -20,4 +20,4 @@ def predict_and_save(model, dev_df,name):
 
     dev_df = dev_df[['PairID','Pred_Score']]
 
-    dev_df.to_csv(f'/predictions/pred_{name}_a.csv', index=False)
+    dev_df.to_csv(f'predictions/pred_{name}_a.csv', index=False)
