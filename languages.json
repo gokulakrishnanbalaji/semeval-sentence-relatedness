@@ -2,47 +2,56 @@
     "Amharic ": {
       "name": "amh",
       "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/amh/amh_train.csv",
-      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/amh/amh_dev.csv"
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/amh/amh_dev.csv",
+      "model_name":"sentence-transformers/LaBSE"
     },
     "Algerian Arabic": {
       "name": "arq",
       "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/arq/arq_train.csv",
-      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/arq/arq_dev.csv"
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/arq/arq_dev.csv",
+      "model_name":"alger-ia/dziribert"
     },
     "Moroccan Arabic": {
       "name": "ary",
       "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/ary/ary_train.csv",
-      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/ary/ary_dev.csv"
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/ary/ary_dev.csv",
+      "model_name":"SI2M-Lab/DarijaBERT"
     },
     "English": {
       "name": "eng",
       "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/eng/eng_train.csv",
-      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/eng/eng_dev.csv"
+      "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/eng/eng_dev.csv",
+      "model_name":"paraphrase-MiniLM-L6-v2"
     },
     "Spanish":{
         "name": "esp",
         "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/esp/esp_train.csv",
-        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/esp/esp_dev.csv"
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/esp/esp_dev.csv",
+        "model_name":"hackathon-pln-es/paraphrase-spanish-distilroberta"
     },
     "Hausa ":{
         "name": "hau",
         "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/hau/hau_train.csv",
-        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/hau/hau_dev.csv"
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/hau/hau_dev.csv",
+        "model_name":"sentence-transformers/LaBSE"
     },
     "Kinyarwanda":{
         "name": "kin",
         "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/kin/kin_train.csv",
-        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/kin/kin_dev.csv"
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/kin/kin_dev.csv",
+        "model_name":"sentence-transformers/LaBSE"
     },
     "Marathi":{
         "name": "mar",
         "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/mar/mar_train.csv",
-        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/mar/mar_dev.csv"
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/mar/mar_dev.csv",
+        "model_name":"l3cube-pune/marathi-sentence-similarity-sbert"
     },
     "Telugu":{
         "name": "tel",
         "train_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/tel/tel_train.csv",
-        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/tel/tel_dev.csv"
+        "dev_url": "https://raw.githubusercontent.com/semantic-textual-relatedness/Semantic_Relatedness_SemEval2024/main/Track%20A/tel/tel_dev.csv",
+        "model_name":"l3cube-pune/telugu-sentence-bert-nli"
     }
     
 }

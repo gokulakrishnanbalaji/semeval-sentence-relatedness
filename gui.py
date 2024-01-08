@@ -16,8 +16,10 @@ lang_mapping={
     'Telugu':'tel'
 }
 lang_list = [lang for lang in lang_mapping]
+print(lang_list)
 model_name_full = gr.Dropdown(lang_list,label="Select Language")
-model_name = lang_mapping[model_name_full]
+
+
 
 
 #get 2 text inputs
@@ -25,7 +27,8 @@ text1 = gr.Textbox(lines=5,label="Text 1")
 text2 = gr.Textbox(lines=5,label="Text 2")
 
 #predict the score
-def predict_score(model_name,text1,text2):
+def predict_score(model_name_full,text1,text2):
+    model_name = lang_mapping[model_name_full]
     model = load(model_name)
 
     embedding1 = model.encode([text1])
@@ -37,5 +40,4 @@ def predict_score(model_name,text1,text2):
 output = gr.Textbox(label="Score")
 
 #launch the app
-gr.Interface(fn=predict_score, inputs=[model_name,text1,text2], outputs=output, title="Semantic Textual Similarity").launch()
-
+gr.Interface(fn=predict_score, inputs=[model_name_full,text1,text2], outputs=output, title="Semantic Textual Similarity").launch()
