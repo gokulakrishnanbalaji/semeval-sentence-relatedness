@@ -1,4 +1,3 @@
-from model import model
 from pipeline import download_data
 from predict import predict_and_save
 from training import training
