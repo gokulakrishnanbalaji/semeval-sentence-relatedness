@@ -24,7 +24,11 @@ def predict_and_save(model, dev_df,name):
 
     dev_df.to_csv(f'predictions/pred_{name}_a.csv', index=False)
 
-    if os.path.exists(f'predictions/pred_{name}_a.csv'):
-        with zipfile.ZipFile(f'zipped_predictions/pred_{name}_a.zip', 'w', zipfile.ZIP_DEFLATED) as zip:
-            zip.write(f'predictions/pred_{name}_a.csv')
-        
+    csv_file_path = f'predictions/pred_{name}_a.csv'
+    zip_file_path = f'zipped_predictions/pred_{name}_a.zip'
+
+    if os.path.exists(csv_file_path):
+        with zipfile.ZipFile(zip_file_path, 'w', zipfile.ZIP_DEFLATED) as zip:
+            zip.write(csv_file_path, arcname=os.path.basename(csv_file_path))
+
+
